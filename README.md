@@ -1,10 +1,7 @@
 # 每日壁纸（BestWallpaper）
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-<!-- 推送到 GitHub 后，把下面这行的 OWNER/REPO 换成你的仓库，并删掉注释符号
-[![build](https://github.com/OWNER/REPO/actions/workflows/build.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/build.yml)
--->
+[![build](https://github.com/pengyuHush/best-wallpaper/actions/workflows/build.yml/badge.svg)](https://github.com/pengyuHush/best-wallpaper/actions/workflows/build.yml)
 
 个人自用的 Windows 桌面壁纸软件：每天按主题从免费图源抓十张壁纸，在本机按固定间隔轮播，支持开机自启、离线兜底与中文字典式主题。
 
