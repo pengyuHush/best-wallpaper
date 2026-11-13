@@ -14,3 +14,9 @@ data/
 *.log
 Thumbs.db
 .DS_Store
+
+# 本机 AI agent 的作业须知，只保留在本地、不公开
+AGENTS.md
+
+# 发布产物
+artifacts/

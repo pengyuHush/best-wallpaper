@@ -163,7 +163,7 @@ Windows 启动带 Low 标签的可执行文件时，进程也以 Low 完整性�
 ## 参与
 
 欢迎提 [issue](../../issues) 与 PR。这个项目刻意保持**零第三方依赖**（连测试框架都没引），新增依赖前请先开 issue 讨论；
-改代码前建议先读 [`AGENTS.md`](AGENTS.md) 与 [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md)。
+改代码前建议先读 [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) 与 [`docs/adr/`](docs/adr/)。
 
 ## 许可
 
