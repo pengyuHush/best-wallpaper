@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>assets\app.ico</ApplicationIcon>
+    <AssemblyName>BestWallpaper</AssemblyName>
+    <RootNamespace>BestWallpaper</RootNamespace>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Product>每日壁纸</Product>
+    <AssemblyTitle>每日壁纸</AssemblyTitle>
+    <Company>personal</Company>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- UseWindowsForms 会塞进 System.Windows.Forms 全局 using，与 WPF 的 Application/MessageBox 撞名 -->
+    <Using Remove="System.Windows.Forms" />
+    <Using Include="System.Net.Http" />
+    <InternalsVisibleTo Include="BestWallpaper.Tests" />
+  </ItemGroup>
+
+</Project>

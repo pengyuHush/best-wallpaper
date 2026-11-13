@@ -1,0 +1,16 @@
+# 构建产物
+bin/
+obj/
+dist/
+dist_next/
+*.user
+*.suo
+.vs/
+
+# 运行时数据：壁纸池、收藏、日志、配置（个人数据，不进仓库）
+data/
+
+# 杂项
+*.log
+Thumbs.db
+.DS_Store

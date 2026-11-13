@@ -1,0 +1,23 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build
+        run: dotnet build BestWallpaper/BestWallpaper.csproj -c Release -p:NoWarn=WFO0003
+
+      - name: Tests
+        run: dotnet run --project tests/BestWallpaper.Tests/BestWallpaper.Tests.csproj -c Release -p:NoWarn=WFO0003
